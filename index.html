@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/galactic-republic.256x256.png" type="image/x-icon">
+    <title>The Jedi Archives</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a class="nav-link" href="">
+                    <i class="bi bi-house-fill"></i>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="">
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="">
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header class="banner">
+        <h1>Bem vindo(a) aos Arquivos Jedi!</h1>
+    </header>
+    <main>
+        <section class="bg-secondary">
+            <h2>Simples e prática</h2>
+            <p>Implementando uma interface para a biblioteca <a href="https://swapi.dev">Star Wars API</a>
+                promove uma consulta de um personagem, raça, nave e muito mais!
+            </p>
+        </section>
+        <section class="bg-tertiary">
+            <h2>Pesquise</h2>
+            <div id="div-categories">
+                <select name="category" id="categories">
+                    <option value="">Selecione uma categoria</option>
+                </select>
+            </div>
+            <div class="div-specific">
+                <select name="" id="specific" class="hidden" onchange="printCard(this)">
+                    <option value="">Selecione um item</option>
+                </select>
+            </div>
+            <div class="code-block">
+                <code>
+                    <pre class="code">
+
+                    </pre>
+                </code>
+            </div>
+            <div class="card resultados-pesquisa hidden">
+                <div class="card-left">
+                    <img src="" alt="" data-card="image">
+                    <h4 data-card="name"></h4>
+                </div>
+                <canvas class="vertical-divider" width="1"></canvas>
+                <div class="card-right">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Arquivos Jedi
+        </p>
+        <p>
+            Autor: <a href="http://github.com/democrito88/imersao">Demócrito d'Anunciação</a>
+        </p>
+        <p>
+            &copy; 2024 - Todos os direitos reservados
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

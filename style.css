@@ -1,0 +1,401 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Classic Dark Side */
+:root {
+    --classic-dark-primary-1: black;
+    --classic-dark-primary-2: deepred;
+    --classic-dark-primary-3: darkgray;
+    --classic-dark-secondary-1: crimson;
+    --classic-dark-secondary-2: maroon;
+    --classic-dark-secondary-3: charcoal;
+    --classic-dark-accent: silver;
+}
+
+/* Light Side Serenity */
+:root {
+    --light-side-primary-1: white;
+    --light-side-primary-2: lightblue;
+    --light-side-primary-3: green;
+    --light-side-secondary-1: lightblue;
+    --light-side-secondary-2: green;
+    --light-side-secondary-3: ivory;
+    --light-side-accent: gold;
+}
+
+/* Rebel Alliance */
+:root {
+    --rebel-alliance-primary-1: red;
+    --rebel-alliance-primary-2: white;
+    --rebel-alliance-primary-3: blue;
+    --rebel-alliance-secondary-1: orange;
+    --rebel-alliance-secondary-2: pink;
+    --rebel-alliance-secondary-3: teal;
+    --rebel-alliance-accent: gold;
+}
+
+/* Galactic Empire */
+:root {
+    --galactic-empire-primary-1: black;
+    --galactic-empire-primary-2: gray;
+    --galactic-empire-primary-3: silver;
+    --galactic-empire-secondary-1: darkgray;
+    --galactic-empire-secondary-2: charcoal;
+    --galactic-empire-secondary-3: steel;
+    --galactic-empire-accent: red;
+}
+
+/* The Mandalorian */
+:root {
+    --mandalorian-primary-1: beige;
+    --mandalorian-primary-2: brown;
+    --mandalorian-primary-3: green;
+    --mandalorian-secondary-1: olive;
+    --mandalorian-secondary-2: khaki;
+    --mandalorian-secondary-3: tan;
+    --mandalorian-accent: silver;
+}
+
+/* The Clone Wars */
+:root {
+    --clone-wars-primary-1: green;
+    --clone-wars-primary-2: blue;
+    --clone-wars-primary-3: gray;
+    --clone-wars-secondary-1: teal;
+    --clone-wars-secondary-2: turquoise;
+    --clone-wars-secondary-3: slate;
+    --clone-wars-accent: silver;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    /* Define a fonte padrão */
+    background-color: var(--light-side-primary-1);
+    /* Cor de fundo da página */
+    height: 100vh;
+    /* Preenche a altura total da viewport */
+}
+
+header {
+    background-image: url('./img/Jedi_Archives.webp');
+    background-size: cover;
+    background-position: center center;
+    color: var(--light-side-primary-1);
+    width: 100%;
+    height: 400px;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    top: 0;
+    background-color: var(--classic-dark-primary-1);
+    color: var(--light-side-accent);
+    padding: .5em 3em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--off-white);
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem;
+    /* Espaçamento entre letras */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem;
+    /* Tamanho da fonte */
+}
+
+/* Estiliza as seções da página */
+section {
+    margin-bottom: 3rem;
+    /* Espaçamento abaixo de cada seção */
+    padding: 2em;
+}
+
+.bg-secondary {
+    background-color: var(--classic-dark-primary-1);
+    color: var(--light-side-accent);
+}
+
+.bg-tertiary {
+    background-color: var(--ligh);
+    color: var(--primary-text-color);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.code-block {
+    background-color: #282c34;
+    color: #999999;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 14px;
+    overflow-x: auto;
+    /* Enable horizontal scrolling if needed */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-left {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.card-right {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+}
+
+.lista-atributos{
+    list-style-type: none;
+}
+
+.vertical-divider {
+    height: 100%;
+    border-left: 1px solid #ccc;
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem;
+    /* Largura dos inputs */
+    border: none;
+    /* Remove a borda padrão */
+    padding: 1rem;
+    /* Espaçamento interno */
+    border-radius: 1.5rem;
+    /* Borda arredondada */
+    margin-bottom: 1rem;
+    /* Espaçamento abaixo dos inputs */
+    color: var(--dark-gray);
+    /* Cor do texto */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    /* Espaçamento interno do botão */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 1.5rem;
+    /* Borda arredondada */
+    background-color: var(--gold);
+    /* Cor de fundo do botão */
+    color: var(--dark-gray);
+    /* Cor do texto do botão */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: var(--gold);
+    /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    /* Largura máxima da caixa de resultados */
+    height: 46vh;
+    /* Altura máxima da caixa de resultados */
+    overflow-y: auto;
+    /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem;
+    /* Espaçamento acima da caixa de resultados */
+    padding: 1rem;
+    /* Espaçamento interno */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF;
+    /* Cor de fundo dos itens */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+    padding: 1rem;
+    /* Espaçamento interno */
+    margin-bottom: 1rem;
+    /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    /* Tamanho da fonte */
+    color: #222831;
+    /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    color: #30475E;
+    /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B;
+    /* Cor do texto */
+    margin: 0.5rem 0;
+    /* Margem acima e abaixo */
+}
+
+select {
+    background-color: var(--light-side-primary-1);
+    color: #000;
+    padding: 0.4em;
+    border: var(--classic-dark-accent) solid 1px;
+    border-radius: 20px;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8;
+    /* Cor de fundo do rodapé */
+    color: #45474B;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    padding: 0;
+    /* Espaçamento interno */
+    width: 100%;
+    /* Largura total da página */
+    /*position: absolute; /* Posiciona o rodapé */
+    bottom: 0;
+    /* Alinha ao fundo da página */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem;
+        /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem;
+        /* Largura dos inputs em telas menores */
+        padding: 0.8rem;
+        /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        /* Largura da caixa de resultados em telas menores */
+        height: 40vh;
+        /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+        /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem;
+        /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem;
+        /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem;
+        /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh;
+        /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+        /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem;
+        /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
