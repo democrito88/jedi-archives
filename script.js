@@ -83,3 +83,10 @@ document.querySelector('#div-categories').addEventListener('change', async (e) =
     document.getElementsByClassName("card-right")[0].append(ul);
   }
 
+  const icons = document.getElementsByClassName("icon");
+  for(const botao of icons){
+    botao.parentElement.addEventListener('click', () => {
+      document.getElementsByTagName("body")[0].classList = "";
+      document.getElementsByTagName("body")[0].classList.add(botao.parentElement.id);
+    });
+  };

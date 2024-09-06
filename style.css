@@ -82,6 +82,36 @@ body {
     /* Preenche a altura total da viewport */
 }
 
+.tema-dark-side{
+    background-color: var(--classic-dark-primary-1);
+    color: var(--classic-dark-accent);
+}
+
+.tema-light-side{
+    background-color: var(--light-side-primary-1);
+    color: var(--light-side-accent);
+}
+
+.tema-rebel-alliance{
+    background-color: var(--rebel-alliance-primary-1);
+    color: var(--rebel-alliance-accent);
+}
+
+.tema-galactic-empire{
+    background-color: var(--galactic-empire-primary-1);
+    color: var(--galactic-empire-accent);
+}
+
+.tema-mandalorian{
+    background-color: var(--mandalorian-primary-1);
+    color: var(--mandalorian-accent);
+}
+
+.tema-clone-wars{
+    background-color: var(--clone-wars-primary-1);
+    color: var(--clone-wars-accent);
+}
+
 header {
     background-image: url('./img/Jedi_Archives.webp');
     background-size: cover;
@@ -97,8 +127,6 @@ header {
 
 nav {
     top: 0;
-    background-color: var(--classic-dark-primary-1);
-    color: var(--light-side-accent);
     padding: .5em 3em;
 }
 
@@ -113,6 +141,15 @@ nav ul {
 .nav-link:hover {
     color: var(--off-white);
     text-decoration: none;
+}
+
+.icon{
+    /*width: 32px;*/
+    height: 32px;
+}
+
+.icon-light{
+    color: white;
 }
 
 h1,
