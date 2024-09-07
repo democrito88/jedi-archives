@@ -192,17 +192,6 @@ section {
     visibility: hidden;
 }
 
-.code-block {
-    background-color: #282c34;
-    color: #999999;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: monospace;
-    font-size: 14px;
-    overflow-x: auto;
-    /* Enable horizontal scrolling if needed */
-}
-
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -220,6 +209,11 @@ section {
 .card-left {
     flex: 0 0 33.33%;
     max-width: 33.33%;
+    padding: 1em;
+}
+
+.avatar{
+    width: 100%;
 }
 
 .card-right {
