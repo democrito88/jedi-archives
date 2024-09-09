@@ -60,7 +60,7 @@ async function printCard(selectSpecific) {
   const resultadoPesquisa = document.getElementsByClassName("resultados-pesquisa")[0];
   resultadoPesquisa.classList.remove("hidden");
   document.querySelector('[data-card="name"]').textContent = resultado.name;
-  document.querySelector('[data-card="image"]').setAttribute('src', `img/profiles/${category}/${resultado.name.toLowerCase()}.jpeg`);
+  document.querySelector('[data-card="image"]').setAttribute('src', `img/profiles/${category}/${id}.jpeg`);
 
   let indices = Object.keys(resultado);
   let valores = Object.values(resultado);
