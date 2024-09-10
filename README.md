@@ -1,5 +1,7 @@
 # The Jedi Archives
 
+![Banner](/img/Jedi_Archives.webp)
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -12,4 +14,6 @@ A student project for praticising front-end developing made with HTML, CSS and J
 [Demócrito d'Anunciação](https://github.com/democrito88)
 
 ### Special thanks
+Thank you for [Alura](www.alura.com.br) and [google](google.com) for promoting such a challenge!
+
 A special thanks to Paul Hallett and [Juriy Bura ](https://github.com/juriy) for providing such an amazing API!
