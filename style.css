@@ -181,6 +181,7 @@ section {
 .bg-secondary {
     background-color: var(--classic-dark-primary-1);
     color: var(--light-side-accent);
+    text-align: center;
 }
 
 .bg-tertiary {
@@ -199,6 +200,7 @@ section {
     background-color: #fff;
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
 }
 
 .container {
@@ -334,6 +336,13 @@ section button:hover {
     /* Cor do texto */
     margin: 0.5rem 0;
     /* Margem acima e abaixo */
+}
+
+.menu-selects{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em 0;
 }
 
 select {
